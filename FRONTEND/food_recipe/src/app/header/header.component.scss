@@ -1,0 +1,129 @@
+nav{
+  background-color: #252B48 !important;
+  height: 90px!important;
+
+}
+.nav-link{
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-right: 24px;
+  transition: 0.3s ease;
+  color: #fff ;
+  font-size: 18px;
+  font-weight: 800;
+}
+.active .nav-link{
+  color: #FFDBC3;
+  font-weight: 900;
+}
+
+img{
+  border-radius: 50px;
+margin-left:20px ;
+  height:70x;
+  width: 70px;
+
+
+}
+
+// close main nav
+
+
+#navbarNav li {
+  list-style-type: none;
+}
+
+#navbarNav li h2 {
+  color: #fff;
+font-size: 40px;
+font-weight: bold;
+}
+//side nav
+.menu{
+  background-color: #4F4557;
+  margin: 5px;
+  border-radius: 7px;
+  display: none;
+}
+.offcanvas-header{
+  background-color: #393646;
+}
+.logo{
+  width: 70px;
+}
+
+.offcanvas-body{
+  background-color: #4F4557;
+
+}
+
+
+.offcanvas{
+  width: 300px;
+  text-align: left !important;
+}
+h5{
+  color:#fff !important ;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.side-bar{
+  display: none;
+
+}
+.fluid-container
+{
+  width:100%;
+
+  overflow: hidden;
+  background-color:#252B48;
+}
+.text
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    justify-content: center;
+    text-align: center;
+font-weight: bold;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 5px;
+
+}
+button
+{
+    float: left;
+}
+
+@media screen and (max-width:912px) {
+  nav{
+      display: none;
+  }
+  .menu{
+      display: block;
+  }
+  .side-bar{
+    display: block;
+  }
+
+
+}
+@media screen and (max-width:400px){
+  .offcanvas{
+      width:250px
+  }
+  .nav-link{
+
+      font-size: 15px;
+      font-weight: 400;
+  }
+  h5{
+      font-size: 15px;
+  }
+  .logo{
+      width: 50px;
+  }
+}

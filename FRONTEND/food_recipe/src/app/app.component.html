@@ -1,0 +1,3 @@
+<app-navbar *ngIf="isShow"></app-navbar>
+<router-outlet (activate)="showHide($event)"></router-outlet>
+<app-footer></app-footer>

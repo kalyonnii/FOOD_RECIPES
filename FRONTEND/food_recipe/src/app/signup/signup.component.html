@@ -1,0 +1,78 @@
+<!--
+
+<div class="container-fluid">
+<form (ngSubmit)="onLogin()">
+  <h2>Sign Up</h2>
+  <div class="email">
+    <label for="email">Email</label>
+    <input type="email" id="email" class="form-control w-50 m-2" formControlName="email" />
+    <div *ngIf="signupForm.get('email')?.errors?.['required'] && signupForm.get('email')?.touched">
+      Email is required.
+    </div>
+    <div *ngIf="signupForm.get('email')?.errors?.['email'] && signupForm.get('email')?.touched">
+      Invalid email format.
+    </div>
+  </div>
+  <div class="password">
+    <label for="password">Password</label>
+    <input type="password" id="password" class="form-control w-50 m-2" formControlName="password" />
+    <div *ngIf="signupForm.get('password')?.errors?.['required'] && signupForm.get('password')?.touched">
+      Password is required.
+    </div>
+    <div *ngIf="signupForm.get('password')?.errors?.['minlength'] && signupForm.get('password')?.touched">
+      Password should be at least 6 characters long.
+    </div>
+  </div>
+  <button type="submit" [disabled]="signupForm.invalid">Sign Up</button>
+</form>
+</div> -->
+
+<!-- registration.component.html -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+      <h2>SignUp</h2>
+      <form (ngSubmit)="onRegister()" #registerForm="ngForm">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            name="username"
+            [(ngModel)]="username"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            [(ngModel)]="email"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            [(ngModel)]="password"
+            class="form-control"
+            required
+          />
+        </div>
+        <button class="btn" type="submit">Register</button>
+      </form>
+      <p *ngIf="!registrationSuccess">
+        If Already registered <a (click)="goToLogin()">Login</a>
+      </p>
+      <p *ngIf="registrationSuccess">
+        Registered successfully! Proceed to <a (click)="goToLogin()">Login</a>
+      </p>
+    </div>
+  </div>
+</div>

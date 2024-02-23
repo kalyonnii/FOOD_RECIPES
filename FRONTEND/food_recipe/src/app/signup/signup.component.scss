@@ -1,0 +1,89 @@
+.container-fluid{
+  background-image: url(../../assets/images/bg2.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+// .form-container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-end; /* Align items to the end of the column */
+//   width: 500px; /* Adjust width as needed */
+//   margin: auto; /* Center the container */
+// }
+
+h2{
+color: #FAF0E6;
+margin-left: 60px;
+padding: 50px;
+align-items: center;
+font-family: sans-serif;
+font-weight: bold;
+}
+
+
+/* signup.component.css */
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #F4EEE0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 50%;
+  padding: 8px;
+  border: 3px solid #c6de96;
+  border-radius: 7px;
+  background-color: transparent;
+ color: #fff;
+
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: #FFDBC3;
+  color: #352F44;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 130px;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #76c0d2;
+}
+
+p{
+  margin-top: 30px;
+  color: white;
+  margin-left: 120px;
+  font-size: 15px;
+  a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #c6de96;
+
+  }
+  a:hover{
+    color: #76c0d2;
+    text-decoration: underline;
+  }
+}
+
+
